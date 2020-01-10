@@ -55,7 +55,7 @@ convo.addQuestion('1.这个是问题一，请选择以下正确的答案', [
         },
     },
     {
-        default: 'C',
+        default: true,
         handler: async function(response, convo, bot) {
             await convo.gotoThread('question2')
         },
@@ -77,7 +77,7 @@ convo.addQuestion('2.这个是问题二，请选择以下正确的答案', [
         },
     },
     {
-        default: 'C',
+        default: true,
         handler: async function(response, convo, bot) {
             await convo.gotoThread('question3')
         },
@@ -99,7 +99,7 @@ convo.addQuestion('3.这个是问题三，请选择以下正确的答案', [
         },
     },
     {
-        default: 'C',
+        default: true,
         handler: async function(response, convo, bot) {
             await convo.gotoThread('confirmation')
         },
