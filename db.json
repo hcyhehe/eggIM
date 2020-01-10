@@ -1,0 +1,31 @@
+{
+  "homework": [
+    {
+      "user": "9d1e6ce4-a542-9a54-85f7-6eea47cd4044",
+      "channel": "9d1e6ce4-a542-9a54-85f7-6eea47cd4044",
+      "name": "小明",
+      "ques1": "A",
+      "ques2": "B",
+      "ques3": "A",
+      "confirm": "是的"
+    },
+    {
+      "user": "003d748d-b29b-46ed-5ac8-0b4f739d1a46",
+      "channel": "003d748d-b29b-46ed-5ac8-0b4f739d1a46",
+      "name": "老何",
+      "ques1": "A",
+      "ques2": "C",
+      "ques3": "C",
+      "confirm": "是的"
+    },
+    {
+      "user": "465d9b12-d256-83ab-2de6-9d0e2fa163bc",
+      "channel": "465d9b12-d256-83ab-2de6-9d0e2fa163bc",
+      "name": "老李",
+      "ques1": "C",
+      "ques2": "B",
+      "ques3": "C",
+      "confirm": "是的"
+    }
+  ]
+}
