@@ -10,8 +10,8 @@ let ws_url
 if(!location.host){
     ws_url = 'ws://localhost:3000'
 } else {
-    console.log('ws_url:'+location.host)
-    ws_url = 'ws://'+location.host
+    ws_url = 'ws://'+location.host+':3000'
+    console.log('ws_url:'+ws_url)
 }
 
 
