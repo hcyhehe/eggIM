@@ -31,31 +31,88 @@ controller.hears(new RegExp('作业'), 'message', async(bot, message) => {
 
 
 //发送问候
-convo.say('好的，接下来开始做作业~')
+convo.say('好的，接下来准备做作业~')
 
 //添加一个问题，将其存储在'name'里面
 convo.ask('请输入您的名字', async(response, convo, bot) => {
     console.log(`user name is ${ response }`)
 }, 'name')
 
-// use add action to switch to a different thread, defined below...
-convo.addAction('favorite_color')
+convo.addMessage('你好，{{vars.name}}！现在开始做作业', 'question1')
 
-// add a message and a prompt to a new thread called `favorite_color`
-convo.addMessage('你好，{{vars.name}}！', 'favorite_color')
-convo.addQuestion('Now, what is your favorite color?', async(response, convo, bot) => {
-    console.log(`user favorite color is ${ response }`)
-},'color', 'favorite_color')
+convo.addAction('question1')
+convo.addQuestion('1.这个是问题一，请选择以下正确的答案', [
+    {
+        pattern: 'A',
+        handler: async function(response, convo, bot) {
+            await convo.gotoThread('question2')
+        },
+    },
+    {
+        pattern: 'B',
+        handler: async function(response, convo, bot) {
+            await convo.gotoThread('question2')
+        },
+    },
+    {
+        default: 'C',
+        handler: async function(response, convo, bot) {
+            await convo.gotoThread('question2')
+        },
+    }
+], 'ques1', 'question1')
+
+convo.addAction('question2')
+convo.addQuestion('2.这个是问题二，请选择以下正确的答案', [
+    {
+        pattern: 'A',
+        handler: async function(response, convo, bot) {
+            await convo.gotoThread('question3')
+        },
+    },
+    {
+        pattern: 'B',
+        handler: async function(response, convo, bot) {
+            await convo.gotoThread('question3')
+        },
+    },
+    {
+        default: 'C',
+        handler: async function(response, convo, bot) {
+            await convo.gotoThread('question3')
+        },
+    }
+], 'ques2', 'question2')
+
+convo.addAction('question3')
+convo.addQuestion('3.这个是问题三，请选择以下正确的答案', [
+    {
+        pattern: 'A',
+        handler: async function(response, convo, bot) {
+            await convo.gotoThread('confirmation')
+        },
+    },
+    {
+        pattern: 'B',
+        handler: async function(response, convo, bot) {
+            await convo.gotoThread('confirmation')
+        },
+    },
+    {
+        default: 'C',
+        handler: async function(response, convo, bot) {
+            await convo.gotoThread('confirmation')
+        },
+    }
+], 'ques3', 'question3')
 
 // go to a confirmation
-convo.addAction('confirmation' ,'favorite_color')
-
-// do a simple conditional branch looking for user to say "no"
-convo.addQuestion('Your name is {{vars.name}} and your favorite color is {{vars.color}}. Is that right?', [
+convo.addAction('confirmation', 'question3')
+convo.addQuestion('姓名:{{vars.name}}  1.{{vars.ques1}} 2.{{vars.ques2}} 3.{{vars.ques3}}  确定提交作业？', [
     {
         pattern: 'no',
         handler: async(response, convo, bot) => {
-            await convo.gotoThread('favorite_color')
+            await convo.gotoThread('question1')
         }
     },
     {
