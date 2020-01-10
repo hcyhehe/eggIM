@@ -26,6 +26,15 @@
       "ques2": "B",
       "ques3": "C",
       "confirm": "是的"
+    },
+    {
+      "user": "76fe445b-d02a-1fa3-2cb9-427592922280",
+      "channel": "76fe445b-d02a-1fa3-2cb9-427592922280",
+      "name": "西西",
+      "ques1": "C",
+      "ques2": "B",
+      "ques3": "A",
+      "confirm": "是"
     }
   ]
 }
