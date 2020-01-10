@@ -3,6 +3,7 @@ npm-debug.log
 yarn-error.log
 node_modules/
 package-lock.json
+db.json
 yarn.lock
 coverage/
 .idea/
@@ -12,4 +13,3 @@ run/
 *.un~
 typings/
 .nyc_output/
-db.json
