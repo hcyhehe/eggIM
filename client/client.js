@@ -5,10 +5,20 @@
 var converter = new showdown.Converter();
 converter.setOption('openLinksInNewWindow', true);
 
+
+let ws_url
+if(!location.host){
+    ws_url = 'ws://localhost:3000'
+} else {
+    console.log('ws_url:'+location.host)
+    ws_url = 'ws://'+location.host
+}
+
+
 var Botkit = {
     config: {
         //ws_url: (location.protocol === 'https:' ? 'wss' : 'ws') + '://' + location.host,
-        ws_url: 'ws://localhost:3000',
+        ws_url: ws_url,
         reconnect_timeout: 3000,
         max_reconnect: 5,
         enable_history: false,
