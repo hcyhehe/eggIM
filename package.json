@@ -10,6 +10,7 @@
     "botbuilder-adapter-web": "^1.0.5",
     "botbuilder-storage-mongodb": "^0.9.5",
     "botkit": "^4.6.1",
+    "botkit-plugin-cms": "^1.0.3",
     "egg": "^2.15.1",
     "egg-scripts": "^2.12.0",
     "lowdb": "^1.0.0"

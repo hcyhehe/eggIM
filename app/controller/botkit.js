@@ -1,6 +1,7 @@
 let { Botkit, BotkitConversation } = require('botkit')
 const MY_DIALOG_ID = 'my-dialog-name-constant'
 const { WebAdapter } = require('botbuilder-adapter-web')
+//const { BotkitCMSHelper } = require('botkit-plugin-cms')   //botkit-cms插件
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
 const dbAdapter = new FileSync('db.json')
@@ -11,6 +12,13 @@ const controller = new Botkit({
     adapter,
     // ...other options
 })
+
+// let cms = new BotkitCMSHelper({
+//     uri: 'http://localhost:3000',
+//     token: '123qweads'
+// })
+// controller.usePlugin(cms)
+
 
 let convo = new BotkitConversation(MY_DIALOG_ID, controller)
 
@@ -153,4 +161,7 @@ convo.addMessage('作业结束，辛苦啦~', 'over')
 
 
 controller.addDialog(convo)
+
+
+
 
