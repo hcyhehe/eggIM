@@ -26,6 +26,15 @@
       "ques2": "B",
       "ques3": "C",
       "confirm": "是的"
+    },
+    {
+      "user": "f9ab0ffa-0e11-a7fe-d7f4-840676853ba9",
+      "channel": "f9ab0ffa-0e11-a7fe-d7f4-840676853ba9",
+      "name": "赵子龙",
+      "ques1": "a",
+      "ques2": "b",
+      "ques3": "a",
+      "confirm": "好"
     }
   ]
 }
