@@ -1,39 +1,12 @@
 {
   "homework": [
     {
-      "user": "9d1e6ce4-a542-9a54-85f7-6eea47cd4044",
-      "channel": "9d1e6ce4-a542-9a54-85f7-6eea47cd4044",
-      "name": "小明",
-      "ques1": "A",
-      "ques2": "B",
-      "ques3": "A",
-      "confirm": "是的"
-    },
-    {
-      "user": "003d748d-b29b-46ed-5ac8-0b4f739d1a46",
-      "channel": "003d748d-b29b-46ed-5ac8-0b4f739d1a46",
-      "name": "老何",
-      "ques1": "A",
-      "ques2": "C",
-      "ques3": "C",
-      "confirm": "是的"
-    },
-    {
-      "user": "465d9b12-d256-83ab-2de6-9d0e2fa163bc",
-      "channel": "465d9b12-d256-83ab-2de6-9d0e2fa163bc",
-      "name": "老李",
-      "ques1": "C",
-      "ques2": "B",
-      "ques3": "C",
-      "confirm": "是的"
-    },
-    {
       "user": "f9ab0ffa-0e11-a7fe-d7f4-840676853ba9",
       "channel": "f9ab0ffa-0e11-a7fe-d7f4-840676853ba9",
       "name": "赵子龙",
-      "ques1": "a",
-      "ques2": "b",
-      "ques3": "a",
+      "ques1": "C",
+      "ques2": "C",
+      "ques3": "B",
       "confirm": "好"
     },
     {
@@ -44,24 +17,9 @@
       "ques2": "C",
       "ques3": "B",
       "confirm": "是的"
-    },
-    {
-      "user": "d76b8fb3-f335-021d-e13d-4f0edd2df883",
-      "channel": "d76b8fb3-f335-021d-e13d-4f0edd2df883",
-      "name": "陈茜茜",
-      "ques1": "A",
-      "ques2": "C",
-      "ques3": "B",
-      "confirm": "数据库"
-    },
-    {
-      "user": "892024bb-c7e3-5253-6a08-3534edb11fa3",
-      "channel": "892024bb-c7e3-5253-6a08-3534edb11fa3",
-      "name": "陈茜茜",
-      "ques1": "A",
-      "ques2": "C",
-      "ques3": "B",
-      "confirm": "是的"
     }
+  ],
+  "lesson": [
+
   ]
 }
