@@ -1,5 +1,4 @@
 const { Botkit, BotkitConversation } = require('botkit')
-const MY_DIALOG_ID = 'my-dialog-botkit'
 const { WebAdapter } = require('botbuilder-adapter-web')
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
@@ -10,16 +9,16 @@ const controller = new Botkit({
   adapter,
   // ...other options
 })
-const convo = new BotkitConversation(MY_DIALOG_ID, controller)
 
 
 class AppBootHook {
   constructor(app) {
     this.app = app
     this.app.db = db
+    this.app.BotkitConversation = BotkitConversation
     this.app.bkController = controller
-    this.app.convo = convo
-    this.app.MY_DIALOG_ID = MY_DIALOG_ID
+    this.app.DIALOG_ID_HOMEWORK = 'my-dialog-botkit-1'
+    this.app.DIALOG_ID_LESSON = 'my-dialog-botkit-2'
   }
   
   async serverDidReady() {
