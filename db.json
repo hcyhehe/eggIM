@@ -21,16 +21,28 @@
   ],
   "lesson": [
     {
-      "teacher":"王国庆",
-      "name":"语文课",
-      "weekday":"星期一",
-      "times":"9:00-10:00"
+      "teacher": "王国庆",
+      "name": "语文课",
+      "weekday": "星期一",
+      "times": "9:00-10:00"
     },
     {
-      "teacher":"李伟民",
-      "name":"数学课",
-      "weekday":"星期一",
-      "times":"14:00-15:00"
+      "teacher": "李伟民",
+      "name": "数学课",
+      "weekday": "星期一",
+      "times": "14:00-15:00"
+    },
+    {
+      "teacher": "孙道林",
+      "name": "物理",
+      "weekday": "星期三",
+      "times": "14:00-15:00"
+    },
+    {
+      "teacher": "林冲",
+      "name": "体育",
+      "weekday": "星期四",
+      "times": "15:00-16:00"
     }
   ]
 }

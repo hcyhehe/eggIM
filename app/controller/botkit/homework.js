@@ -1,20 +1,21 @@
 module.exports = app => {
+    let that = this
     const convoHW = new app.BotkitConversation(app.DIALOG_ID_HOMEWORK, app.bkController)
+    this.hw_msg = ''
 
     app.bkController.hears(new RegExp('做作业'), 'message', async(bot, message) => {
+        that.hw_msg = message
         await bot.beginDialog(app.DIALOG_ID_HOMEWORK)
     })
     
-    //发送问候
-    convoHW.say('好的，接下来准备做作业~')
+    convoHW.say('好的，接下来准备做作业~')  //发送问候
     
-    //添加一个问题，将其存储在'name'里面
     convoHW.ask('请输入您的名字', async(response, convo, bot) => {
-        console.log(`user name is ${ response }`)
+        //console.log(`用户名： ${ response }`)
+        await bot.reply(that.hw_msg, `你好，${ response }，现在开始答题`)  //可以防止addMessage重复显示
     }, 'name')
     
-    convoHW.addMessage('你好，{{vars.name}}！现在开始做作业', 'question1')
-    
+    //convoHW.addMessage('你好，{{vars.name}}！现在开始做作业', 'question1')
     convoHW.addAction('question1')
     convoHW.addQuestion('1.这个是问题一，请选择以下正确的答案: A.是的 B.不是 C.其他', [
         {

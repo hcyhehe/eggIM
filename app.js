@@ -17,8 +17,9 @@ class AppBootHook {
     this.app.db = db
     this.app.BotkitConversation = BotkitConversation
     this.app.bkController = controller
-    this.app.DIALOG_ID_HOMEWORK = 'my-dialog-botkit-1'
-    this.app.DIALOG_ID_LESSON = 'my-dialog-botkit-2'
+    this.app.DIALOG_ID_HOMEWORK = 'dialogID_1'
+    this.app.DIALOG_ID_LESSON_FIND = 'dialogID_2'
+    this.app.DIALOG_ID_LESSON_ADDONE = 'dialogID_3'
   }
   
   async serverDidReady() {
