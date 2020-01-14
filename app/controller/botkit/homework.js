@@ -1,5 +1,5 @@
 module.exports = app => {
-    app.bkController.hears(new RegExp('作业'), 'message', async(bot, message) => {
+    app.bkController.hears(new RegExp('做作业'), 'message', async(bot, message) => {
         await bot.beginDialog(app.MY_DIALOG_ID)
     })
     
