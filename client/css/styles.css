@@ -156,8 +156,8 @@ a.button:hover {
   flex-shrink: 0;
   text-align: center;
   border-bottom: 1px solid #CCC;
-  font-size: 14px;
-  padding: 0.25rem;
+  font-size: 15px;
+  padding: 0.45rem;
   color: #666;
 }
 #message_window .powered_by a {
