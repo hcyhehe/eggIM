@@ -17,6 +17,15 @@
       "ques2": "C",
       "ques3": "B",
       "confirm": "是的"
+    },
+    {
+      "user": "112cfc64-ccee-0bfe-2f0c-e16c02d62d60",
+      "channel": "112cfc64-ccee-0bfe-2f0c-e16c02d62d60",
+      "name": "赵虎",
+      "ques1": "C",
+      "ques2": "B",
+      "ques3": "A",
+      "confirm": "是的"
     }
   ],
   "lesson": [
@@ -39,10 +48,16 @@
       "times": "14:00-15:00"
     },
     {
-      "teacher": "林冲",
-      "name": "体育",
-      "weekday": "星期四",
-      "times": "15:00-16:00"
+      "teacher": "王国庆",
+      "name": "化学",
+      "weekday": "星期一",
+      "times": "10:00-11:00"
+    },
+    {
+      "teacher": "刘龙山",
+      "name": "生物",
+      "weekday": "星期五",
+      "times": "17:00-18:00"
     }
   ]
 }

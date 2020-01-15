@@ -52,13 +52,14 @@
             <div id="message_replies">
             </div>
             <footer>
-                <form onsubmit="Botkit.send(Botkit.input.value, event)">
-                    <input type="text" autocomplete="off" id="messenger_input" placeholder="说点什么好呢" />
-                    <button type="submit">发送</button>
-                </form>
+              <form onsubmit="Botkit.send(Botkit.input.value, event)">
+                <input type="text" autocomplete="off" id="messenger_input" placeholder="说点什么好呢" value="" />
+                <button id="send_btn" type="submit">发送</button id="hello_btn">
+              </form>
             </footer>
         </div>
-        </div>
-        <script src="./client.js"></script>
+      </div>
+
+      <script src="./client.js"></script>
     </body>
 </html>

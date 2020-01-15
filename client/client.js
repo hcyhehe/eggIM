@@ -2,6 +2,7 @@
  * Copyright (c) Microsoft Corporation. All rights reserved.
  * Licensed under the MIT License.
  */
+
 var converter = new showdown.Converter();
 converter.setOption('openLinksInNewWindow', true);
 
@@ -204,6 +205,7 @@ var Botkit = {
                 channel: 'socket',
                 user_profile: that.current_user ? that.current_user : null,
             });
+            Botkit.send('菜单')  //发送开局快捷语言
         });
 
         that.socket.addEventListener('error', function (event) {
@@ -468,8 +470,8 @@ var Botkit = {
 };
 
 
-(function () {
+(function (){
     // your page initialization code here
     // the DOM will be available here
-    Botkit.boot();
-})();
+    Botkit.boot()
+})()
