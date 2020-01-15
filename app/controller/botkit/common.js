@@ -21,7 +21,7 @@ module.exports = app => {
 
     app.bkController.hears('菜单', 'message', async(bot, message) => { 
         await bot.reply(message, {
-            text: '以下是快捷菜单（命令行添加课程案例，输入：命令行课程添加 |教师名 | 课程名 | 星期几 | 9:00-10:00）',
+            text: '以下是快捷菜单（若想退出某个对话，输入：中止）（命令行添加课程案例，输入：命令行课程添加 |教师名 | 课程名 | 星期几 | 9:00-10:00）',
             quick_replies: [
                 { title: "做作业", payload: "做作业" },
                 { title: "查作业", payload: "查作业" },
