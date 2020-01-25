@@ -11,7 +11,6 @@ const controller = new Botkit({
 })
 
 
-
 class AppBootHook {
   constructor(app) {
     this.app = app
